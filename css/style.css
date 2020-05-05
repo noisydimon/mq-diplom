@@ -1,7 +1,7 @@
 .welcome {
     position: relative;
     color: #ffffff;
-    height: 650px; 
+    height: 916px; 
     background-image: url(../images/football_1920.jpg);
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -34,8 +34,12 @@
   .welcome_label {
     width: 160px;
     height: auto;
+    margin-top: 43px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .logo {
-    fill: white;
+    max-width: 100%;
+    height: auto;
   }
