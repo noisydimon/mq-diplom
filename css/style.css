@@ -60,7 +60,7 @@ p {
 }
 
 
-.welcome {
+  .welcome {
     position: relative;
     color: #ffffff;    
     background-image: url(../images/football_1920.jpg);
@@ -83,7 +83,7 @@ p {
 
   .container {
     box-sizing: border-box;
-    padding: 45px;    
+    padding: 90px;    
     position: relative;
     z-index: 2;
     left:0;
@@ -137,12 +137,9 @@ p {
   .button {
     box-sizing: border-box;
     width: 290px;
+    min-width: 282px;
     height: 75px;
     padding: 12px 40px 12px;
-  }
-
-  .button:nth-child(n+2) {
-    margin-left: 42px;
   }
 
   .apple-button {
@@ -223,28 +220,28 @@ p {
   .athlets-preview {
     position: absolute;    
     top: 2%;
-    right: 50%;
+    right: 44%;
   }
      
   .athlets-img {
-    width: 100%;
+    width: 80%;
   }
   
   .container-athlets {
     display: flex;
     justify-content: flex-end;
-    padding: 55px 45px;
+    padding: 40px 45px;
    }
 
   .container-athlets-data {
-    display: flex;
-    flex-wrap: wrap;
     width: 45%;
-    margin-right: 2%;      
+    margin-right: 2%; 
+       
   }
 
   .athlets-description {
-    padding: 15px 30px 15px 0;
+    padding-left: 0;
+    padding-right: 30px;
   }
 
   .container-athlets--gray {
@@ -257,10 +254,11 @@ p {
 
   .container-title {
     display: flex;
+    align-items: center;
    }
 
   .number, .number-alternative-athlets {
-    padding-top: 9px;
+    
     font-size: 16px;
     margin-right: 10px;
   }
@@ -286,7 +284,7 @@ p {
   }
 
   .number-alternative-players {
-    padding-top: 9px;
+    
     font-size: 16px;
     margin-right: 10px;
     color: #5e42b0;
@@ -294,8 +292,7 @@ p {
 
   .players {    
     position: relative;    
-    padding-top: 116px;
-    
+    padding-top: 116px; 
   }
 
   .players-title {
@@ -305,7 +302,7 @@ p {
 
   .players-info-title {
     width: 45%;
-    margin-left: 5%;
+    margin-left: 10%;
   }
 
   .players-preview {
@@ -315,25 +312,25 @@ p {
   }
      
   .players-img {
-    width: 100%;
+    width: 80%;
   }
   
   .container-players {
     display: flex;
     justify-content: flex-start;
-    padding: 55px 45px;
+    padding: 40px 10%;
    }
 
-  .container-players-data {
-    display: block;  
-    width: 45%;
-    margin-left: 2%;      
+  .container-players-data {      
+    width: 45%;  
+         
   }
  
   .players-description {
-    padding: 15px 30px 15px 0;
+    padding-left: 0;
+    padding-right: 30px;
   }
-
+  
   .container-players--gray {
     background-color:#f6f4fa;
   }
@@ -350,7 +347,7 @@ p {
 
 
 
-.aditional-activityes {
+ .aditional-activityes {
   font-size: 18px;
 }
 
@@ -374,29 +371,39 @@ p {
     height: 100%;
   }
 
-  .be-active-info, .find-contact-info, .work-it-info {
+  .find-contact-info {
     box-sizing: border-box;
     width: 50%;
-    padding-left: 7%;
+    padding-left: 10%;
     padding-right: 10%;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 8%;
+    
+  }
+
+  .be-active-info, .work-it-info {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 6%;
+    padding-right: 10%;
+    padding-top: 8%;
+    
   }
 
   .be-active-description, .find-contact-description, .work-it-description {
-    display: flex;
-    justify-content: flex-end;
-    padding: 55px 0px 55px 0px;
+    padding: 0;
+    margin-top: 55px;
    }
 
+   
    .container-be-active-number, .container-find-contact-number, .container-work-it-number {
      box-sizing: border-box;
      background-color: #5e42b0 ;
      position: absolute;
      width: 114px;
      height: 100px;
-     left: 46%;
-     top: 135px;
+     left: 50%;
+     margin-left: -57px;
+     top: 19%;
      display: flex;
      justify-content: center;
      padding-top: 30px;
@@ -512,4 +519,419 @@ p {
   .footer_label {
     margin-top: 260px;
   }
+ 
+
+
+
+
+ @media (min-width: 768px) {
+
+    .button:nth-child(n+2) {
+      margin-left: 40px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    h1 {      
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 45px;
+    }
+    
+    h3 {
+      font-size: 28px;
+    }
+    
+   
+    .welcome_info {     
+      margin-top: 150px;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      align-self: center;
+    }
+
+    .welcome_buttons {
+       margin-top: 250px;
+    }
+
+    .athlets {        
+      padding-top: 55px; 
+    }
+
+    .players {        
+      padding-top: 0px; 
+    }
+
+    .container-players {
+      display: flex;
+      justify-content: flex-start;
+      padding: 40px 5%;
+     }
+
+    .athlets-info-title {
+      width: 45%;
+      margin-right: 11%;
+    }
+  
+    .athlets-preview {  
+      top: 10%;
+      left: -18%;
+      max-width: 570px;
+    }  
+    
+    .container-athlets-data {
+      width: 55%;
+      margin-right: 2%; 
+    }
+
+    .container-players-data {      
+      width: 55%;  
+    }
+
+    .players-info-title {
+      width: 45%;
+      margin-left: 5%;
+    }
+    
+    .players-preview {
+      position: absolute;
+      display: flex;
+      justify-content: end;
+      top: -5%;
+      right: 0%;
+    }
+    
+    .be-active, .work-it, .find-contact   {
+      display: block;
+    } 
+
+    
+  
+    .be-active-info, .work-it-info, .find-contact-info {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 40px 25px;
+      min-height: 189px;
+      
+    } 
+
+    .be-active-description, .find-contact-description, .work-it-description {
+      padding: 0;
+      margin-top: 0;
+     }
+  
+    .container-be-active-number, .container-find-contact-number, .container-work-it-number {
+      box-sizing: border-box;
+      background-color: #5e42b0;
+      position: absolute;
+      width: 114px;
+      height: 100px;
+      left: 80px;      
+      top: 65%;      
+    }
+
+    .footer-slogan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 5%;
+      padding-right: 5%;    
+    }
+
+    .footer_icon {
+      background-color:#5e42b0;
+      width: 100px;
+      fill: white;  
+      padding: 15px 10px;  
+      border-radius: 25px; 
+
+    }
+
+    .footer-slogan-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+ 
+    .footer_buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 350px;
+    }
+
+    .footer_label {
+      margin-top: 50px;
+    }
+    
+  }
+
+
+
+@media (max-width: 767px) {
+
+      h1 {      
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 50px;
+      }
+      
+      h3 {
+        font-size: 20px;
+      }
+
+      .container {
+        box-sizing: border-box;
+        padding: 40px 20px 80px 20px;    
+        position: relative;
+        z-index: 2;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .welcome_info {    
+        max-width: 1200px;
+        margin-top: 100px;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+      }
+
+      .welcome_slogan_2 {
+         text-align: start;
+         margin-left: 15%;
+         padding: 0;
+      }
+
+      .welcome_buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 80px;
+      }   
+
+      .apple-button-icon {
+        width: 30px;
+        height: 30px;
+        fill: white; 
+      }
+    
+
+      .button-info-1 {    
+        margin: 0px 0px;
+        color: white;
+        font-size: 10px;
+        font-family: "Open Sans Regular";    
+      }
+    
+      .button-info-2 {    
+        margin: 0px 0px;
+        color: white;
+        font-size: 10px;    
+      }
+
+      .google-button-icon {
+        width: 30px;
+        height: 30px;
+        fill: white;    
+      }
+        
+      .button:nth-child(n+2) {
+        margin-top: 42px;
+      }
+
+      .button {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        width: 290px;
+        min-width: 141px;
+        height: 45px;
+        padding: 6px 20px 6px;
+      }
+
+       
+
+      .athlets, .players { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .athlets-info, .players-info {
+        font-size: 12px;
+     }
+
+      .container-athlets, .container-players {
+        display: block;
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+       }
+
+       .container-athlets-data, .container-players-data {
+        width: 100%;          
+      }
+    
+      .number, .number-alternative-athlets {
+        font-size: 12px;
+      }
+    
+      .number::after {
+        width: 13px;
+        margin-top: 2px;       
+      }
+    
+      .number-alternative-athlets::after, .number-alternative-players::after  {
+        width: 13px;     
+      }
+    
+      .number-alternative-players {
+        font-size: 12px;
+      }
+
+      .athlets-description, .players-description {
+        padding-left: 0;
+        padding-right: 0;
+     }
+  
+      .container-athlets:nth-child(n+2), .container-players:nth-child(n+2) {
+      margin-top: 70px;
+    }
+
+      .athlets-preview, .players-preview {
+        position: static;         
+      }
+
+      .athlets-img, .players-img {
+        width: 100%;
+        }
+      
+      .be-active, .work-it  {
+         display: flex;
+         flex-wrap: wrap;
+      }
+
+      .find-contact {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+      .be-active-preview, .find-contact-preview, .work-it-preview {
+        width: 100%;
+      }
+
+      .aditional-activityes-title {
+        font-size: 34px;
+      }
+
+      .be-active-info, .work-it-info, .find-contact-info {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 207px;
+        padding-left: 6%;
+        padding-right: 10%;
+        padding-top: 10%;
+        padding-bottom: 50px;
+      }
+
+      .be-active-description, .find-contact-description, .work-it-description {
+        font-size: 14px;
+        padding: 0;
+        margin-top: 15px;
+      }
+
+      .container-be-active-number, .container-find-contact-number, .container-work-it-number {
+        width: 75px;
+        height: 70px;
+        left: 23%;        
+        top: 53%;
+        padding-top: 20px;
+     }
+
+      .athlets-info-title, .players-info-title {
+        width: 100%;      
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+
+      .footer-container {
+        box-sizing: border-box;
+        padding: 80px 0 10px 0;    
+
+      }
+
+
+      .footer_icon {
+       
+        width: 60px;
+        padding: 12px 10px;  
+        border-radius: 15px; 
+  
+      }
+
+      .footer-slogan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;    
+      }
+
+      .footer-slogan-info {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+      }
+    
+      .footer-slogan-info-1 {
+        font-size: 32px;
+      }
+
+      .footer-slogan-info-2 {
+        font-size: 14px;
+      }
+
+      .footer_buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 80px;
+      }
+
+      .button:nth-child(n+2) {
+        margin-top: 15px;
+      }
+
+      .footer_label {
+        margin-top: 80px;
+      }
+
+    }
+        
+  
+
+
  
