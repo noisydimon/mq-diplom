@@ -235,8 +235,7 @@ p {
 
   .container-athlets-data {
     width: 45%;
-    margin-right: 2%; 
-       
+    margin-right: 2%;   
   }
 
   .athlets-description {
@@ -302,7 +301,7 @@ p {
 
   .players-info-title {
     width: 45%;
-    margin-left: 10%;
+    margin-left: 45px;
   }
 
   .players-preview {
@@ -318,12 +317,11 @@ p {
   .container-players {
     display: flex;
     justify-content: flex-start;
-    padding: 40px 10%;
+    padding: 40px 45px;
    }
 
   .container-players-data {      
-    width: 45%;  
-         
+    width: 45%;           
   }
  
   .players-description {
@@ -349,20 +347,19 @@ p {
 
  .aditional-activityes {
   font-size: 18px;
-}
+  }
 
  .be-active, .work-it  {
-   display: flex;
-   position: relative;
+    display: flex; 
   }
 
   .find-contact {
-    display: flex;
-    position: relative;
+    display: flex; 
     flex-direction: row-reverse;
   }
 
-  .be-active-preview, .find-contact-preview, .work-it-preview {
+  .be-active-number, .find-contact-number, .work-it-number {
+    position: relative;
     width: 50%;
   }
 
@@ -376,8 +373,7 @@ p {
     width: 50%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 8%;
-    
+    padding-top: 8%;    
   }
 
   .be-active-info, .work-it-info {
@@ -386,7 +382,6 @@ p {
     padding-left: 6%;
     padding-right: 10%;
     padding-top: 8%;
-    
   }
 
   .be-active-description, .find-contact-description, .work-it-description {
@@ -395,19 +390,34 @@ p {
    }
 
    
-   .container-be-active-number, .container-find-contact-number, .container-work-it-number {
+   .container-be-active-number, .container-work-it-number {
      box-sizing: border-box;
-     background-color: #5e42b0 ;
+     background-color: #5e42b0;
      position: absolute;
      width: 114px;
      height: 100px;
-     left: 50%;
+     left: 100%;
      margin-left: -57px;
-     top: 19%;
+     bottom: 65%;
      display: flex;
      justify-content: center;
      padding-top: 30px;
      padding-bottom: auto;
+   }
+
+   .container-find-contact-number {
+    box-sizing: border-box;
+    background-color: #5e42b0;
+    position: absolute;
+    width: 114px;
+    height: 100px;
+    right: 100%;
+    margin-right: -57px;
+    bottom: 65%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: auto;
    }
 
    .aditional-activityes-number {
@@ -609,6 +619,9 @@ p {
       display: block;
     } 
 
+    .be-active-number, .find-contact-number, .work-it-number {
+      width: 100%;
+    }
     
   
     .be-active-info, .work-it-info, .find-contact-info {
@@ -624,15 +637,25 @@ p {
       margin-top: 0;
      }
   
-    .container-be-active-number, .container-find-contact-number, .container-work-it-number {
-      box-sizing: border-box;
-      background-color: #5e42b0;
-      position: absolute;
-      width: 114px;
-      height: 100px;
-      left: 80px;      
-      top: 65%;      
-    }
+  .container-be-active-number, .container-work-it-number {
+     width: 90px;
+     height: 90px;
+     left: 5%;
+     margin-left: 0px;
+     bottom: -2%;
+     padding-top: 30px;
+
+   }
+
+  .container-find-contact-number {
+    width: 90px;
+    height: 90px;
+    right: 0%;
+    left: 5%;
+    margin-right: 0px;
+    bottom: -2%;
+    padding-top: 30px;
+   }
 
     .footer-slogan {
       display: flex;
@@ -691,8 +714,12 @@ p {
 
       .container {
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 40px 20px 80px 20px;    
         position: relative;
+
         z-index: 2;
         left:0;
         right:0;
@@ -719,8 +746,8 @@ p {
 
       .welcome_buttons {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         margin-top: 80px;
       }   
 
@@ -777,6 +804,7 @@ p {
 
       .athlets-info, .players-info {
         font-size: 12px;
+        width:100%;
      }
 
       .container-athlets, .container-players {
@@ -813,11 +841,16 @@ p {
      }
   
       .container-athlets:nth-child(n+2), .container-players:nth-child(n+2) {
-      margin-top: 70px;
+      margin-top: 0px;
     }
 
       .athlets-preview, .players-preview {
-        position: static;         
+        position: static;    
+      }
+
+      .players-preview {
+        display: flex;
+        align-self: flex-end;       
       }
 
       .athlets-img, .players-img {
@@ -835,10 +868,10 @@ p {
         flex-direction: row;
       }
 
-      .be-active-preview, .find-contact-preview, .work-it-preview {
-        width: 100%;
-      }
-
+    
+  .be-active-number, .find-contact-number, .work-it-number {
+    width: 100%;
+  }
       .aditional-activityes-title {
         font-size: 34px;
       }
@@ -858,14 +891,29 @@ p {
         padding: 0;
         margin-top: 15px;
       }
-
-      .container-be-active-number, .container-find-contact-number, .container-work-it-number {
-        width: 75px;
-        height: 70px;
-        left: 23%;        
-        top: 53%;
-        padding-top: 20px;
-     }
+  
+      .container-be-active-number, .container-work-it-number {
+        width: 60px;
+        height: 60px;
+        left: 5%;
+        margin-left: 0px;
+        bottom: -2%;
+        padding-top: 18px;
+   
+      }
+   
+     .container-find-contact-number {
+       width: 60px;
+       height: 60px;
+       right: 0%;
+       left: 5%;
+       margin-right: 0px;
+       bottom: -2%;
+       padding-top: 18px;
+      }
+      .aditional-activityes-number {
+        font-size: 12px;
+      }
 
       .athlets-info-title, .players-info-title {
         width: 100%;      
@@ -916,7 +964,8 @@ p {
 
       .footer_buttons {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         margin-top: 80px;
       }
@@ -930,6 +979,8 @@ p {
       }
 
     }
+
+
         
   
 
